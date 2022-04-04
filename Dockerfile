@@ -3,7 +3,7 @@
 FROM nginx:latest
 
 # Adding custom index.html hosted on Github Gist
-ADD https://gist.github.com/sundar0428/4d17796a53436261c410ce2e2bf09d2f/index.html /usr/share/nginx/html/
+ADD https://gist.githubusercontent.com/sundar0428/4d17796a53436261c410ce2e2bf09d2f/raw/375e6c7cdfb8fdc29314e4199b62393ad0683476/index.html /usr/share/nginx/html/
 
 # Adding read permissions to custom index.html
 RUN chmod +r /usr/share/nginx/html/index.html
