@@ -3,7 +3,7 @@
 FROM nginx:latest
 
 # Adding custom index.html hosted on Github Gist
-ADD  /usr/share/nginx/html/
+ADD https://github.com/sundar0428/Dockerlearning/blob/main/index.html /usr/share/nginx/html/
 
 # Adding read permissions to custom index.html
 RUN chmod +r /usr/share/nginx/html/index.html
